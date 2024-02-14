@@ -1,0 +1,60 @@
+.exitBtn {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 40px;
+}
+
+.exitBtn .open {
+    opacity: 1;
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.exitBtn .close {
+    opacity: 0;
+}
+
+.exitBtn.ant-btn > span  {
+    display: flex;
+}
+
+.exitBtn.ant-btn > .anticon + span {
+    margin-left: 25px;
+    transition: color ease 0.3s;
+}
+
+.exitBtn.ant-btn .anticon path{
+    fill: #262626;
+    transition: all ease 0.3s;
+}
+
+.exitBtn.ant-btn {
+    transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.exitBtn.ant-btn:hover,
+.exitBtn.ant-btn:focus,
+.exitBtn.ant-btn:active {
+    color: #1890ff;
+    background: #e6f7ff; 
+}
+
+.exitBtn.ant-btn:hover .anticon path,
+.exitBtn.ant-btn:focus .anticon path,
+.exitBtn.ant-btn:active .anticon path{
+    fill: #1890ff;
+}
+
+@media (max-width: 440px) {
+    .exitBtn {
+        padding: 7px 16px;
+        align-items: center;
+        justify-content: center;
+    }
+    .exitBtn.ant-btn .anticon {
+        display: none;
+    }
+    .exitBtn.ant-btn > .anticon + span {
+        margin-left: 0;
+    }
+}
+
