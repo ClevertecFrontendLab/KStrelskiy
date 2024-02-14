@@ -39,6 +39,26 @@
     color: #1890ff;
 }
 
+.ant-menu-item-icon.calendary path {
+    transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.ant-menu-item:hover .ant-menu-item-icon.calendary path,
+.ant-menu-item:active .ant-menu-item-icon.calendary path,
+.ant-menu-item:focus .ant-menu-item-icon.calendary path{
+    fill: #1890ff;
+}
+
+
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected  {
+    background-color: transparent;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected .ant-menu-item-icon.calendary path {
+    fill: #1890ff;
+}
+
 @media (max-width: 440px) {
     .sidebarMenu .ant-menu-item .ant-menu-item-icon {
         display: none;

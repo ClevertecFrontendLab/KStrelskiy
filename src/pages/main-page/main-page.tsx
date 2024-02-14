@@ -22,8 +22,6 @@ export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
     const windowSize = useWindowSize();
 
-    console.log(windowSize.width);
-
     return (
         <Layout className='container'>
             <Sider
@@ -63,7 +61,8 @@ export const MainPage: React.FC = () => {
                     <Typography>
                         <Title level={4} className='sub-title'>
                             CleverFit — это не просто приложение, а твой личный помощник в мире
-                            фитнеса. Не откладывай на завтра — начни тренироваться уже сегодня!
+                            фитнеса. Не откладывай на завтра — <span>начни тренироваться уже</span>{' '}
+                            сегодня!
                         </Title>
                     </Typography>
                     <ContentCards />

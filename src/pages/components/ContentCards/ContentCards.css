@@ -13,6 +13,17 @@
     white-space: wrap;
 }
 
+.cardsBtn.anticon-calendary .anticon path {
+    fill: #2F54EB ;
+    transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.cardsBtn.anticon-calendary:hover .anticon path,
+.cardsBtn.anticon-calendary:active .anticon path,
+.cardsBtn.anticon-calendary:focus .anticon path {
+    fill:  rgba(0, 0, 0, 0.85);
+}
+
 @media (max-width: 834px) {
     .main-card .ant-card-head {
         padding: 12px 24px;
